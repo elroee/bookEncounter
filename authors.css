@@ -1,0 +1,181 @@
+html{
+    height: auto;
+    max-width: auto;
+}
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #8b0505ab; */
+    background-color: #292929;
+    margin: 0;
+}
+.logo img{
+    width: 40px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.logo{
+    float: left;
+    padding: 0;
+}
+
+header{
+    padding: 5px;
+    top:0px;
+    position: fixed;
+    width:100%;
+    border-bottom: 1px solid white;
+    background-color: #292929;
+}
+
+
+
+.links{
+    text-align: right;
+    width: 50%;
+    float: right;
+    bottom: 2px;
+    padding: 10px;
+    padding-bottom: 0px;
+    display: block;
+}
+
+header h2{
+    display: inline;
+    color: white;
+    font-family: cursive;
+}
+
+.fix{
+    clear: both;
+}
+
+header a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;  
+}
+
+header a:hover{
+    color: orangered;
+}
+
+.active{
+    color: brown;
+    border-bottom: 1px solid #f64c72;
+}
+
+.container{
+    margin-top: 40px;
+    width: 100%;
+    
+}
+
+
+.container h2{
+    text-align: center;
+    color:  white;
+    font-size: 30px;
+}
+
+.container>a{
+    text-decoration: none;
+    color: white;
+    background-color: #292929;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container table{
+    width: 50%;
+    margin-left: 24.5%;
+    margin-right: 24.5%;
+}
+
+.container td{
+    width: 18px;
+    margin-bottom: 10px;
+}
+
+.container table img{
+    width: 150px;
+    height: 200px;
+}
+
+.container table a{
+    text-decoration: none;
+    color: #f64c72;
+}
+
+.container table a:hover{
+    color: orange;
+}
+
+.container>a:hover{
+    color: orange;
+}
+
+.fix{
+    clear: both;
+}
+
+@media (max-width: 1024px){
+    html{
+        height: auto;
+    }
+   header{
+       padding:3px;
+   }
+   .links{
+       width: 60%;
+   }
+   .links a{
+    font-size: 15px;
+}
+   .container table{
+    width: 100%;
+    margin: 0px;
+    }
+
+    .container table img{
+    width: 120px;
+    height:170px;
+    }
+}
+
+@media (max-width:768px){
+    .links{
+        width: 100%;
+        text-align: center;
+    }
+
+    header a{
+        font-size: 15px;
+    }
+
+    .logo{
+        text-align: center;
+        margin-left: 28%;
+        margin-right: 20%;       
+    }
+
+    .container>a{
+        top: 40px;
+        position: relative;
+    }
+
+    .container table{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .container table img{
+        width: 80px;
+        height:130px;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="shortcut icon" href="logo/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="topcontainer">
+        <header>
+            <div class="logo">
+                <img src="logo/booksicon.png" alt="">
+                <h2>BookEncounter</h2>
+                <div class="fix"></div>
+            </div>
+            <!-- <div class="links">
+                <a class="active" href="home.html">Home</a>
+                <a href="books1.html">Books</a>
+                <a href="arrivals.html">New Arrivals</a>
+                <a href="request.html">Request</a>
+                <a href="contact.html">Contact</a>
+            </div> -->
+            <div class="fix">
+            </div>
+        </header>
+        <hr>
+        <br>
+        <br>
+    </div>
+    <div class="form">
+        <form action="">
+            <img src="covers/bookplace.png" alt="book" id="display">
+            <table>
+                <tr>
+                    <td>
+                        <label for="file">Book Cover</label>
+                    </td>
+                    <td>
+                        <input type="file" name="file" id="file">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="title">Book Title</label>
+                    </td>
+                    <td>
+                        <input type="text" name="title" id="title">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="author">Book Author</label>
+                    </td>
+                    <td>
+                        <input type="text" name="author" id="author">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="topic">Book Topic</label>
+                    </td>
+                    <td>
+                        <input type="text" name="topic" id="topic ">                      
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="desc">Book Description</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="desc" cols="30" rows="10"></textarea>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" id="submit">
+            <input type="button" value="Retrieve" id="retrieve">
+        </form>
+    </div>
+    <footer>
+        &copy; HiLCoE 2020, All Rights Reserved.
+    </footer>
+    <script src="admin.js"></script>
+</body>
+
+</html>

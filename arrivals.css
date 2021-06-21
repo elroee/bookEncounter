@@ -1,0 +1,355 @@
+html{
+    height: 1500px;
+    max-width: auto;
+}
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #8b0505ab; */
+    /* background-image: url("library.jpg"); 
+    background-attachment: fixed;    */
+    background-color: #292929;
+    background-size: 100%;
+    max-width: auto;
+    margin: 0;
+    
+}
+.container{
+    margin-top: 30px;
+}
+
+.logo img{
+    width: 40px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.logo{
+    float: left;
+    padding: 0;
+}
+
+
+header{
+    padding: 5px;
+    top:0px;
+    position: fixed;
+    width:100%;
+    border-bottom: 1px solid white;
+    background-color: #292929;
+}
+
+
+
+.links{
+    text-align: right;
+    width: 50%;
+    float: right;
+    bottom: 2px;
+    padding: 10px;
+    padding-bottom: 0px;
+    display: block;
+}
+header h2{
+    display: inline;
+    color: white;
+    font-family: cursive;
+}
+
+.fix{
+    clear: both;
+}
+
+header a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;   
+}
+
+header a:hover{
+    color: orangered;
+}
+
+.active{
+    color: brown;
+    border-bottom: 1px solid #f64c72;
+}
+
+
+.bookone, .booktwo, .bookthree, .bookfour, .bookfive, .booksix, .bookseven, .bookeight{
+    width: auto;
+    padding: 10px;
+    max-height:25%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid white;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    color: white;
+    /* background-color: rgba(163, 71, 18, 0.671); */
+    overflow: hidden;
+}
+
+div section{
+    /* border: 1px solid white; */
+    padding: 5px;
+    /* background-color: #8b0505ab; */
+}
+
+
+div td img{
+    max-width: 30%;
+    height: auto;
+    float: right;
+}
+
+div td{
+    padding: 5px;
+    width: 50%;
+}
+
+div table tr p>a{
+    text-decoration: none;
+    color: orange;
+}
+
+div table tr p>a:hover{
+    color: olive;
+    text-decoration: underline;
+}
+
+div table td >a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    /* background-color: #8b0505ab; */
+    color: white;
+    border: 2px solid darkgray;
+}
+div table td>a:hover{
+    border: 2px solid olive;
+    color: olive;
+}
+
+.buttons{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.title{
+    color: #f64c72;
+}
+
+.show, .back{
+    text-decoration: none;
+    cursor: pointer;
+}
+.show{
+    border: 3px solid #8b0505ab;
+    /* background-image: linear-gradient(transparent,transparent), radial-gradient(circle at top left, #8b0505ab, #f87219); */
+    /* background-origin: border-box;
+    background-clip: content-box, border-box; */
+    color: white;
+    padding:10px;
+    /* font-weight: bold; */
+}
+
+.back{
+    float: right;
+    color: white;
+}
+.show:hover{
+    color: #8b0505ab;;
+    /* border-color: #f64c72; */
+}
+
+.back:hover{
+    color: #f9fd00;
+}
+
+footer{
+    width:50%;
+    margin-left: 24.5%;
+    margin-right: 24.5%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.modal{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #292929;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border:none;
+    outline:none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body{
+    padding: 10px 15px;
+}
+
+.modal-body .cover{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+.modal-body .cover img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.modal-body .desc{
+    width: 55%;
+    float: left;
+    padding: 5px;
+}
+
+.modal-body .options{
+    text-align: center;
+    margin-left: 20%;
+    margin-left: 20%;
+    width: 60%;
+   
+
+}
+
+.modal-body button img{
+    width:20px;
+    height: 15px;
+}
+.modal-body button{
+    color: white;
+    background: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-body .download{
+    border: 1px solid white;
+    
+}
+
+.modal-body .like{
+    border: none;
+}
+
+.modal-body .like img{
+    width: 30px;
+    height: 30px;
+}
+
+.modal-body .like h4{
+    display: inline;
+}
+
+
+#overlay{
+    position:fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1; 
+    pointer-events:all;
+}
+
+
+@media (max-width: 1024px){
+    html{
+        height: auto;
+    }
+   header{
+       padding:3px;
+   }
+   .links{
+       width: 60%;
+   }
+   .links a{
+    font-size: 15px;
+}
+}
+@media (max-width:768px){
+    .links{
+        width: 100%;
+        text-align: center;
+    }
+
+    header a{
+        font-size: 15px;
+    }
+
+    .logo{
+        text-align: center;
+        margin-left: 28%;
+        margin-right: 20%;
+        
+    }
+    .bookone, .booktwo, .bookthree, .bookfour, .bookfive, .booksix, .bookseven, .bookeight{
+       font-size: 10px;
+    }
+
+    div img{
+        max-width: 60%;
+        
+    }
+
+    .show{
+        font-size: 15px;
+        padding: 3px;
+        text-align: center;
+    }
+
+    footer{
+        width:70%;
+        margin-left: 14.5%;
+        margin-right: 14.5%;
+    }
+    .modal-body{
+        font-size: 10px;
+    }
+}
